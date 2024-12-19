@@ -57,6 +57,18 @@ namespace feladat
             return paratlanok;
         }
 
+        static void F05(int[] args)
+        {
+            Console.WriteLine("Ennyi db pozitív szám van a tömben: " + F02(args));
+            Console.WriteLine("A tömb elemeinek átlaga: " + F03(args));
+            Console.WriteLine("A tömbből alkotott páratlan számok:");
+            foreach (var item in F04(args))
+            {
+                Console.WriteLine(item + ", ");
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
         }
