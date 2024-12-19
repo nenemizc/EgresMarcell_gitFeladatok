@@ -64,13 +64,16 @@ namespace feladat
             Console.WriteLine("A tömbből alkotott páratlan számok:");
             foreach (var item in F04(args))
             {
-                Console.WriteLine(item + ", ");
+                Console.Write(item + ", ");
             }
             Console.WriteLine();
         }
 
         static void Main(string[] args)
         {
+            int[] szamok = new int[10];
+            F01(szamok);
+            F05(szamok);
         }
     }
 }
