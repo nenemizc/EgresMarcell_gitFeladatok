@@ -40,6 +40,23 @@ namespace feladat
             return atlag/args.Length;
         }
 
+        static int[] F04(int[] args)
+        {
+            int[] paratlanok = new int[10];
+            for (int i = 0 ; args.Length > i; i++)
+            {
+                if (args[i] % 2 == 0)
+                {
+                    paratlanok[i] = args[i]+1;
+                }
+                else
+                {
+                    paratlanok[i] = args[i];
+                }
+            }
+            return paratlanok;
+        }
+
         static void Main(string[] args)
         {
         }
