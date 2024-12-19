@@ -30,6 +30,16 @@ namespace feladat
             return szamalo;
         }
 
+        static double F03(int[] args)
+        {
+            double atlag = 0;
+            for (int i = 0; args.Length > i; i++)
+            {
+                atlag += args[i];
+            }
+            return atlag/args.Length;
+        }
+
         static void Main(string[] args)
         {
         }
