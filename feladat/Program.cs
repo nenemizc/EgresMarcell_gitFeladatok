@@ -17,6 +17,19 @@ namespace feladat
             }
         }
 
+        static int F02(int[] args) 
+        {
+            int szamalo = 0;
+            for (int i = 0; args.Length > i; i++)
+            {
+                if (args[i] % 2 ==0)
+                {
+                    szamalo++;
+                }
+            }
+            return szamalo;
+        }
+
         static void Main(string[] args)
         {
         }
